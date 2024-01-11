@@ -16,7 +16,7 @@ Welcome to the Bubble Game! Test your reflexes by hitting the correct bubble.
 
 ## Try it Out
 
-You can play the game [here](https://your-vercel-app-url).
+You can play the game [here](https://bubble-game-24.vercel.app/).
 
 
 ### Installation
