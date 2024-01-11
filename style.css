@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: rgb(170, 208, 243);
+}
+
+.main h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.panel {
+  width: 90%;
+  height: 85%;
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ptop {
+  padding: 0px 30%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  font-size: 20px;
+  color: white;
+  background: rgb(82, 109, 247);
+}
+
+.elem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.elem h2 {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.box {
+  padding: 10px 20px;
+  background: white;
+  border-radius: 5px;
+  color: rgb(55, 0, 255);
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.pbtm {
+  width: 100%;
+  /* pbtm height = total height - height of ptop */
+  height: calc(100% - 100px);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* bring element to the next line */
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: column;
+}
+
+
+#gameInstructions {
+  font-size: 24px;
+}
+
+#startButton {
+  padding: 10px 20px;
+  background-color: rgb(82, 109, 247);
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 50px auto; 
+  display: block; /* Ensure it's a block-level element for margin auto to work */
+  align-items: center;
+}
+
+#startButton:hover {
+  background-color: rgb(1, 1, 255);
+}
+
+
+
+.bubble {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(82, 109, 247);
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.bubble:hover {
+  background: rgb(1, 1, 255);
+  /* transition: 0.3s ease-in-out; */
+  cursor: pointer;
+}
+
+
+#reloadButton {
+  padding: 10px 20px;
+  background-color: rgb(82, 109, 247);
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 30px;
+  align-items: center;
+}
+
+#reloadButton:hover {
+  background-color: rgb(1, 1, 255);
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .ptop {
+    padding: 0 10px; 
+  }
+
+  .bubble {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ptop {
+    padding: 0 5px; 
+  }
+  .main h1 {
+    font-size: 24px; 
+  }
+  .bubble {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+}

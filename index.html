@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- main class -->
+    <div class="main">
+      <h1>Bubble Game 🫧</h1>
+      <!-- panel  -->
+      <div class="panel">
+        <!-- top panel -->
+        <div class="ptop">
+          <div class="elem">
+            <h2>Hit</h2>
+            <div class="box" id="hitVal">4</div>
+          </div>
+          <div class="elem">
+            <h2>Timer</h2>
+            <div class="box" id="timerValue">60</div>
+          </div>
+          <div class="elem">
+            <h2>Score</h2>
+            <div class="box" id="scoreVal">0</div>
+          </div>
+        </div>
+
+        <!-- bottom panel -->
+        <div class="pbtm">
+          <div id="gameInstructions">
+            <p>👋🏻 Welcome to the Bubble Game!</p>
+            <p>🎯 Hit the bubble with the correct hit number to score points.</p>
+            <p>👍🏻 Click "Start Playing" to begin!</p>
+            <button id="startButton" onclick="startPlaying()">Start Playing</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
