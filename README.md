@@ -28,6 +28,7 @@ You can play the game [here](https://your-vercel-app-url).
 
 2. Navigate to the project directory:
 
+    ```bash
     cd bubble-game
 
 3. Try it Out
